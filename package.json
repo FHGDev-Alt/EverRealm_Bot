@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "node bot.js",
+    "shutdown": ".exit"
+  },
+  "dependencies": {
+    "discord.js": "latest",
+    "snekfetch": "latest",
+    "roblox-js": "latest"
+  }
+}
