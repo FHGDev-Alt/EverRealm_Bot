@@ -2,7 +2,7 @@ const discord = require('discord.js')
 
 module.exports.run = (bot, message, args) => {
 	const em = new discord.RichEmbed()
-	.setTitle('Testbot Help')
+	.setTitle('Everbot Help')
 	.setDescription("What can I help you with?")
 	.addField('Everyone', "Help\nPing\n")
 	.addField("Moderators", "Kick\nMute\nRestart\nBan\n")
