@@ -7,7 +7,7 @@ const prefix = "e;"
 
 bot.commands = new discord.Collection()
 
-fs.readdir('./commands/', (err, files) => {
+require('fs').readdir('./commands/', (err, files) => {
   if (err) console.error("Error loading files.");
   files.filter(f => f.split(".").pop() === "js").forEach((f,i) => {
     bot.commands.set(require(`./commands/${f}`).help.name, require(`./commands/${f}`))
